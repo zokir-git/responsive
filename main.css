@@ -2,4 +2,62 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.web__header {
+  background-color: #010f56;
+  padding: 1rem 0rem;
+  color: #ffffff;
+}
+.web__header .header_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.web__header .header_wrapper .business_location {
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-right: 5rem;
+  position: relative;
+}
+.web__header .header_wrapper .business_location::before {
+  content: "";
+  background-image: url(./images/location.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -0.2rem;
+  left: -1.4rem;
+  width: 1rem;
+  height: 1.5rem;
+}
+.web__header .header_wrapper .business_contnact {
+  font-weight: 300;
+  font-size: 0.9rem;
+  position: relative;
+}
+.web__header .header_wrapper .business_contnact::before {
+  content: "";
+  background-image: url(./images/phone__icon.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -0.14rem;
+  left: -1.8rem;
+  width: 1.4rem;
+  height: 1.5rem;
+}
+
+@media (max-width: 992px) {
+  .header_nav .business_contnact {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .header_nav {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
