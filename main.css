@@ -18,10 +18,12 @@ body {
 
 .color__yellow {
   background-color: #fccc43;
+  color: #07003b !important;
 }
 
 .color__darker {
   background-color: #07003b;
+  color: #ffffff;
 }
 
 .color__success {
@@ -109,6 +111,92 @@ body {
 .bonus__section__wrapper .bonus__item-line .item__name {
   font-weight: 300;
   margin-top: 0.7rem;
+}
+
+.discount__card .card {
+  background: #ffffff;
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 3px;
+  padding: 0;
+  position: relative;
+}
+.discount__card .discount__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  top: 0;
+}
+.discount__card .discount__box .discount__percent {
+  color: #ff027e;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 0.1rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.card:hover {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.discount__section-body {
+  margin-top: 7px;
+  padding: 0 10px 20px 10px;
+}
+.discount__section-body .discount__body-titel {
+  color: #010f56;
+  font-weight: 700;
+  font-size: 18px;
+}
+.discount__section-body .business__type {
+  border-radius: 0.2rem;
+  display: inline-block;
+  padding: 0.3rem 1.5rem;
+  font-weight: 300;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+.discount__section-body .building__address,
+.discount__section-body .address__navigation {
+  font-weight: 300;
+  font-size: 14px;
+}
+.discount__section-body .building__address b,
+.discount__section-body .address__navigation b {
+  font-weight: 600;
+}
+.discount__section-body .discount__btn {
+  background: none;
+  border: 1px solid #07003b;
+  border-radius: 0.3rem;
+  padding: 0.6rem 5rem;
+  font-weight: 300;
+  font-size: 14px;
+  color: #07003b;
+  transition: all 0.3s;
+}
+.discount__section-body .discount__btn:hover {
+  background-color: #07003b;
+  color: #ffffff;
+}
+
+.showMore_content {
+  text-align: center;
+  margin: 3.3rem;
+}
+.showMore_content .showMore_btn {
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding: 0.6rem 2.5rem;
+}
+.showMore_content .showMore_btn:hover {
+  background-color: #ffffff;
+  color: #07003b;
+  border: 1px solid #07003b;
 }
 
 @media (max-width: 992px) {
