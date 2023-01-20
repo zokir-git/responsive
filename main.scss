@@ -20,10 +20,53 @@ $orange: #f95f09;
 $shopping: #ffc1b3;
 $rare: #da57f8;
 
+.color__main {
+  background-color: $main;
+}
+.color__pink {
+  background-color: $pink;
+}
+.color__yellow {
+  background-color: $yellow;
+  color: #07003b !important;
+}
+
+.color__darker {
+  background-color: $darker;
+  color: $white;
+}
+.color__success {
+  background-color: $success;
+}
+.color__primary {
+  background-color: $primary;
+}
+
+.color__danger {
+  background-color: $danger;
+}
+
+.color__orange {
+  background-color: $orange;
+}
+
+.color__shopping {
+  background-color: $shopping;
+}
+
+.color__rare {
+  background-color: $rare;
+}
+
+// WEBSITE COLORS ENDED
+
+// WEBSITE HEADER START
 .web__header {
   background-color: $main;
   padding: 1rem 0rem;
   color: $white;
+
+  margin-bottom: 3rem;
   .header_wrapper {
     display: flex;
     justify-content: space-between;
@@ -65,18 +108,141 @@ $rare: #da57f8;
   }
 }
 
+// WEBSITE HEADER ENDED
 
+//  BONUS SECTION START
 
+.bonus__section__wrapper {
+  text-align: center;
+  margin-bottom: 8rem;
+  .bonus__section-titel {
+    font-weight: 700;
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
+    color: $main;
+  }
 
+  .bonus__item-line {
+    display: flex;
+    justify-content: space-between;
+    .item__name {
+      font-weight: 300;
+      margin-top: 0.7rem;
+    }
+  }
+}
 
+// BONUS SECTION ENDED
 
+// DISCOUNT SECTION START
 
+.discount__card {
+  .card {
+    background: #ffffff;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+    padding: 0;
+    position: relative;
+  }
 
+  .discount__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    position: absolute;
+    top: 0;
 
+    .discount__percent {
+      color: $pink;
+
+      font-weight: 700;
+      font-size: 20px;
+      background-color: $white;
+      padding: 0.1rem 1.2rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.card:hover {
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.discount__section-body {
+  margin-top: 7px;
+  padding: 0 10px 20px 10px;
+  .discount__body-titel {
+    color: $main;
+    font-weight: 700;
+    font-size: 18px;
+  }
+  .business__type {
+    border-radius: 0.2rem;
+    display: inline-block;
+    padding: 0.3rem 1.5rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+
+    color: $white;
+  }
+  .building__address,
+  .address__navigation {
+    b {
+      font-weight: 600;
+    }
+    font-weight: 300;
+    font-size: 14px;
+  }
+
+  .discount__btn {
+    background: none;
+    border: 1px solid $darker;
+    border-radius: 0.3rem;
+    padding: 0.6rem 5rem;
+
+    font-weight: 300;
+    font-size: 14px;
+
+    color: $darker;
+
+    transition: all 0.3s;
+  }
+
+  .discount__btn:hover {
+    background-color: $darker;
+    color: $white;
+  }
+}
+
+.showMore_content {
+  text-align: center;
+  margin: 3.3rem;
+  .showMore_btn {
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding: 0.6rem 2.5rem;
+  }
+
+  .showMore_btn:hover {
+    background-color: $white;
+    color: $darker;
+    border: 1px solid $darker;
+  }
+}
 
 @media (max-width: 992px) {
   .header_nav {
     .business_contnact {
+      display: none;
+    }
+  }
+  .bonus__item-line {
+    .item-7,
+    .item-6,
+    .item-5 {
       display: none;
     }
   }
@@ -85,5 +251,31 @@ $rare: #da57f8;
 @media (max-width: 768px) {
   .header_nav {
     display: none;
+  }
+
+  .bonus__item-line {
+    .item-7,
+    .item-6,
+    .item-5,
+    .item-4 {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .bonus__section-titel {
+    font-size: 1.5rem !important;
+  }
+  #bonus__item-line {
+    display: flex;
+    justify-content: space-around;
+    .item-7,
+    .item-6,
+    .item-5,
+    .item-4,
+    .item-3 {
+      display: none;
+    }
   }
 }
