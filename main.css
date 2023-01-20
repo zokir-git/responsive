@@ -199,6 +199,57 @@ body {
   border: 1px solid #07003b;
 }
 
+.contact__box .brand__name,
+.contact__box .phone__number {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social__media {
+  position: relative;
+}
+.social__media a {
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
+  display: inline-block;
+  color: #ffffff;
+  font-weight: 300;
+  padding: 0.5rem;
+  margin-right: 40px;
+}
+.social__media .facebook::before {
+  content: " ";
+  background-image: url(./images/facebook.svg);
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: -1.5rem;
+}
+.social__media .instagram::before {
+  content: " ";
+  background-image: url(./images/instagram.svg);
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 6.8rem;
+}
+.social__media .telegram::before {
+  content: " ";
+  background-image: url(./images/telegram.svg);
+  background-size: 26px 26px;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  left: 15.5rem;
+}
+
 @media (max-width: 992px) {
   .header_nav .business_contnact {
     display: none;
@@ -206,6 +257,9 @@ body {
   .bonus__item-line .item-7,
 .bonus__item-line .item-6,
 .bonus__item-line .item-5 {
+    display: none;
+  }
+  .web__footer .contact__box {
     display: none;
   }
 }
@@ -218,6 +272,12 @@ body {
 .bonus__item-line .item-5,
 .bonus__item-line .item-4 {
     display: none;
+  }
+  .footer__logo {
+    display: none !important;
+  }
+  .contact__box {
+    display: none !important;
   }
 }
 @media (max-width: 576px) {
@@ -234,5 +294,11 @@ body {
 #bonus__item-line .item-4,
 #bonus__item-line .item-3 {
     display: none;
+  }
+  .contact__box {
+    display: none;
+  }
+  .social__media a {
+    display: none !important;
   }
 }/*# sourceMappingURL=main.css.map */
